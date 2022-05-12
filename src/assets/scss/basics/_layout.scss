@@ -1,0 +1,33 @@
+.header-layout {
+  padding: 0 15px;
+  height: 50px;
+}
+
+.main-layout {
+  display: grid;
+  grid-template-columns: rem(70px) auto rem(70px);
+
+  > * {
+    grid-column: 2;
+    overflow: auto;
+    
+  }
+
+  > .full {
+    grid-column: 1 / -1;
+  }
+
+  @include for-medium-layout {
+    grid-template-columns: rem(10px) 1fr rem(10px);
+  }
+  @include for-narrow-layout {
+    grid-template-columns: rem(10px) 1fr rem(10px);
+  }
+  @include for-mobile-layout {
+    grid-template-columns: rem(10px) 1fr rem(10px);
+  }
+}
+
+.main-content {
+  flex: 1;
+}

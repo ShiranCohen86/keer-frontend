@@ -1,0 +1,16 @@
+.app-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: rem(70px);
+    text-transform: capitalize;
+    background-color: $bclr0;
+    p,
+    .app-logo {
+        cursor: pointer;
+    }
+    margin-bottom: rem(40px);
+    @include for-normal-layout {
+        margin-bottom: rem(20px);
+    }
+}

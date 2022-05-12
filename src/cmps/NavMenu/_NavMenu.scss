@@ -1,0 +1,7 @@
+.MuiBox-root {
+    color: $bclr2;
+    .MuiTypography-root:hover {
+        background-color: $bclr1;
+        border-radius: rem(5px);
+    }
+}

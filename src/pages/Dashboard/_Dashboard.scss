@@ -1,0 +1,82 @@
+.dashboard {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    text-transform: capitalize;
+    padding: rem(10px);
+    column-gap: rem(5px);
+    row-gap: rem(5px);
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "header header"
+        "family dynamic "
+        "status status";
+    position: relative;
+
+    .MuiToggleButtonGroup-root {
+        position: absolute;
+        grid-area: dynamic;
+        right: rem(10px);
+        top: rem(10px);
+        text-transform: capitalize;
+    }
+    h1 {
+        grid-area: header;
+        text-decoration: underline;
+        color: $bclr1;
+    }
+    .available-rooms {
+        grid-area: dynamic;
+    }
+    .couples-rooms {
+        grid-area: dynamic;
+        width: 100%;
+    }
+    .families-guests {
+        grid-area: family;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .status-rooms {
+        grid-area: status;
+        margin-top: rem(10px);
+    }
+    > .full {
+        grid-column: 1 / -1;
+    }
+
+    .families-guests,
+    .available-rooms,
+    .couples-rooms {
+        padding: rem(10px);
+        border-radius: rem(10px);
+        border: 5px dashed white;
+        width: 100%;
+        height: rem(550px);
+        h2 {
+            margin-bottom: rem(10px);
+        }
+    }
+
+    @include for-normal-layout {
+        .MuiToggleButtonGroup-root {
+            right: rem(10px);
+            bottom: rem(10px);
+            top: unset;
+        }
+    }
+    @include for-medium-layout {
+        padding: 0;
+
+        ul {
+            overflow-y: auto;
+            max-height: rem(450px);
+        }
+        h2 {
+            font-size: rem(22px);
+            margin-bottom: rem(10px);
+        }
+    }
+}

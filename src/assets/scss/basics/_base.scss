@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.4;
+  // font-size: rem(16px);
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  background-color: $bclr2;
+  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 600;
+  color: $bclr1;
+}
+
+p {
+  margin: 0;
+}
+
+label {
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* ROUTES */
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:focus,
+a.router-link-exact-active {
+  font-weight: bold;
+}
+
+hr {
+  background-color: rgba(9, 30, 66, 0.13);
+  border: 0;
+  height: 1px;
+  margin: 0;
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
+}
+
+/* BUTTON */
+
+button {
+  cursor: pointer;
+}
+
+i {
+  cursor: pointer;
+}

@@ -1,0 +1,8 @@
+.room-preview {
+
+    @include for-normal-layout {
+        .MuiCardContent-root {
+            padding: rem(5px);
+        }
+    }
+}

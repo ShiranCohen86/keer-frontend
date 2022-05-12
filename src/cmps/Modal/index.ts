@@ -1,0 +1,1 @@
+export { ModalMsg } from './ModalMsg'
